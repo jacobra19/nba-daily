@@ -15,5 +15,13 @@
     "bugs": {
         "url": "https://github.com/jacobra19/nba-daily/issues"
     },
-    "homepage": "https://github.com/jacobra19/nba-daily#readme"
+    "homepage": "https://github.com/jacobra19/nba-daily#readme",
+    "dependencies": {
+        "chalk": "^4.1.2",
+        "dompurify": "^2.3.2",
+        "html-table-to-json": "^1.0.0",
+        "jsdom": "^17.0.0",
+        "node-fetch": "^3.0.0"
+    },
+    "type": "module"
 }
