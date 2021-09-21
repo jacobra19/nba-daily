@@ -16,9 +16,6 @@ dayjs.extend(isYesterday);
 
 const { JSDOM } = jsdom;
 
-// 'https://www.basketball-reference.com/boxscores/?month=5&day=19&year=2019' // 2OT EXAMPLE
-// 'https://www.basketball-reference.com/boxscores/?month=4&day=19&year=2021' // 9 games EXAMPLE
-
 const getDocument = async (url) => {
     const response = await fetch(url);
     const html = await response.text();
