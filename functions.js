@@ -33,7 +33,7 @@ const getDateMessage = (document) => {
         return null;
     }
     const relativeTime = dayjs().to(currentDocumentDate);
-    return `The last games were played ${relativeTime} (${currentDocumentDate.format('DD/MM/YY')}).`;
+    return `The last games were played ${relativeTime} (${currentDocumentDate.format('DD/MM/YY')}):`;
 };
 
 export { getDocument, getDateMessage };
