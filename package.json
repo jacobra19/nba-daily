@@ -1,8 +1,11 @@
 {
     "name": "nba-daily",
-    "version": "0.0.1",
+    "version": "0.0.4",
     "description": "node cli for getting daily nba stats and scores",
     "main": "index.js",
+    "bin": {
+        "nba-daily": "./cli.js"
+    },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
@@ -18,6 +21,7 @@
     "homepage": "https://github.com/jacobra19/nba-daily#readme",
     "dependencies": {
         "chalk": "^4.1.2",
+        "dayjs": "^1.10.7",
         "dompurify": "^2.3.2",
         "html-table-to-json": "^1.0.0",
         "jsdom": "^17.0.0",
