@@ -1,5 +1,6 @@
 import CFonts from 'cfonts';
 import chalk from 'chalk';
+import Table from 'cli-table3';
 
 const logHeader = (title, options = {}) => {
     const cFontsOptions = {
@@ -23,7 +24,16 @@ const logHeader = (title, options = {}) => {
 
 const logInfo = (message, options = {}) => {
     console.log(chalk.bgBlueBright.white(message));
-    // console.log(chalk.bgWhite.blueBright(message));
 };
 
-export { logHeader, logInfo };
+logTables = ({ keys, teamsValues }, options = {}) => {
+    const table = new Table({
+        head: keys,
+        colWidths: [25],
+    });
+
+    table.push(teamsValues);
+    console.log(table.toString());
+};
+
+export { logHeader, logInfo, logTables };
