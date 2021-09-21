@@ -1,6 +1,6 @@
 {
     "name": "nba-daily",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "description": "node cli for getting daily nba stats and scores",
     "main": "index.js",
     "bin": {
