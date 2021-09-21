@@ -26,13 +26,12 @@ const logInfo = (message, options = {}) => {
     console.log(chalk.bgBlueBright.white(message));
 };
 
-logTables = ({ keys, teamsValues }, options = {}) => {
+const logTables = (keys, teamsValues) => {
     const table = new Table({
         head: keys,
         colWidths: [25],
     });
-
-    table.push(teamsValues);
+    table.push(...teamsValues);
     console.log(table.toString());
 };
 
