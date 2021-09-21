@@ -14,7 +14,7 @@
         "url": "git+https://github.com/jacobra19/nba-daily.git"
     },
     "author": "Yakov Rakhamimov",
-    "license": "ISC",
+    "license": "MIT",
     "bugs": {
         "url": "https://github.com/jacobra19/nba-daily/issues"
     },
